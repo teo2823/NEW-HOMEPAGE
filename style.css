@@ -20,8 +20,15 @@ header {
     width: 50px;
 }
 
-header ul li {
-    display: none;
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+ul li {
+    font-weight: 300;
+    margin-left: 20px;
+    font-family: inter, sans-serif;
 }
 .i i {
     font-size: 30px;
@@ -169,4 +176,38 @@ aside {
 }
 #gaming {
     background-image: url(./assets/images/image-gaming-growth.jpg);
+}
+
+@media screen and (max-width: 500px) {
+    header ul, li {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .title-section {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 40px;
+    }
+    #without-aside {
+        width: 100%;
+    }
+    .title-section h1 {
+        width: 50%;
+        font-size: 2.4em;
+    }
+    .p-with-btn {
+        width: 50%;
+    }
+    .i i {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 770px) {
+    .steps {
+        flex-direction: row;
+    }
 }
