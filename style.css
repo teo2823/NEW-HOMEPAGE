@@ -41,9 +41,132 @@ header ul li {
 
 .title-section { 
     position: relative;
-    margin: 30px 0px;
+    margin: 30px 0px 0px 0px;
 }
 
 .title-section h1 {
-    
+    font-family: Inter;
+    color: rgb(26, 25, 25);
+}
+
+.p-with-btn p {
+    font-family: Inter, sans-serif;
+    line-height: 20px;
+    font-weight: 400;
+    padding: 15px 0px;
+    font-size: 0.88em;
+}
+
+.p-with-btn button {
+    font-family: Inter;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 5px;
+    color:  white;
+    background-color: rgb(199, 75, 71);
+    width: 140px;
+    height: 40px;
+    border: none;
+}
+
+aside {
+    width: 100%;
+    margin: 60px 0px;
+}
+
+.content-aside {
+    background-color: rgb(2, 2, 44);
+    color: white;
+    padding: 15px 15px 0px 15px;
+    font-family: inter, sans-serif;
+}
+
+.article-aside {
+    padding: 25px 0px;
+    border-bottom: 1px solid rgb(167, 163, 163);
+}
+
+.article-aside:last-child {
+    border: none;
+}
+
+.content-aside h1 {
+    color: rgb(206, 137, 73);
+    font-weight: 700;
+}
+
+.article-aside h1{
+    color: white;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.article-aside p {
+    width: 99%;
+    font-weight: 200;
+    font-size: 0.7em;
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+}
+
+.content-step {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height: 110px;
+}
+
+.content-step img {
+    width: 70px;
+    height: 100%;
+}
+
+.info-step {
+    height: 100%;
+    width: 100%;
+    font-family: inter, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.info-step h1 {
+    font-size: 1.5em;
+    color: rgb(165, 165, 165);
+    margin-bottom: 5%;
+}
+
+.info-step h2 {
+    font-size: 0.8em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    margin-bottom: 5%;
+}
+
+.info-step p {
+    font-size: 0.65em;
+    font-weight: 600;
+    color: rgb(46, 46, 46);
+}
+
+.img-step {
+    width: 130px;
+    height: 110px;
+    background-size: cover;
+    background-position: center;
+}
+
+#retro-pc {
+    background-image: url(./assets/images/image-retro-pcs.jpg);
+}
+#laptops{
+    background-image: url(./assets/images/image-top-laptops.jpg);
+}
+#gaming {
+    background-image: url(./assets/images/image-gaming-growth.jpg);
 }
