@@ -39,8 +39,9 @@ a {
     text-decoration: none;
     color: black;
 }
-.i i {
+.i #bars {
     font-size: 30px;
+    cursor: pointer;
 }
 
 .hero {
@@ -86,12 +87,10 @@ a {
     width: 140px;
     height: 40px;
     border: none;
+    z-index: inherit;
+    position: relative;
     transition-duration: 1s;
-    transition-property: border-top, 
-       border-left, 
-       border-bottom,
-       border-right,
-       box-shadow;
+    cursor: pointer;
 }
 
 
@@ -110,6 +109,7 @@ aside {
 .article-aside {
     padding: 25px 0px;
     border-bottom: 1px solid rgb(167, 163, 163);
+    cursor: pointer;
 }
 
 .article-aside:last-child {
@@ -122,10 +122,12 @@ aside {
     font-size: 2em;
 }
 
+
 .article-aside h1{
     color: white;
     font-size: 1em;
     margin-bottom: 10px;
+    transition: ease-in 200ms;
 }
 
 .article-aside p {
@@ -188,6 +190,8 @@ aside {
     height: 130px;
     background-size: cover;
     background-position: center;
+    position: relative;
+    z-index: -1;
 }
 
 #retro-pc {
@@ -201,8 +205,38 @@ aside {
 }
 
 @media screen and (max-width: 500px) {
-    header ul, li {
+
+    nav {
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        right: -250px;
+        background-color: rgb(2, 2, 44);
+        width: 250px;
+        height: 100vh;
+        padding: 40px;
+        transition: all 400ms;
+    }
+    header ul {
+
+        flex-direction: column;
+    }
+    header nav ul li {
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+    nav ul li a{
+        color: #bebebe
+    }
+    #blur-content {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.7);
         display: none;
+        z-index: 1;
     }
 }
 
@@ -297,7 +331,10 @@ aside {
     .content-aside h1{
         font-size: 3em;
     }
-    .article-aside h1, .article-adie p {
+    .article-aside h1{
         font-size: 1.5em;
+    }
+    .article-aside p {
+        font-size: 1em;
     }
 }
