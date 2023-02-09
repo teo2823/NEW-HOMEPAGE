@@ -257,7 +257,7 @@ aside {
     .p-with-btn {
         width: 50%;
     }
-    .i i {
+    #bars {
         display: none;
     }
 }
